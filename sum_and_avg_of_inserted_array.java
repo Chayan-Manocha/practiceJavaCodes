@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class sum_and_avg_of_inserted_array
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,n,arr[],avg=0,sum=0,count=0;
+        arr=new int[100];
+        System.out.println("enter the value of n");
+        n=sc.nextInt();
+        System.out.println("enter the array");
+        for(i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("display the array");
+        for(i=0;i<n;i++)
+        {
+            sum+=arr[i];
+            count+=1;
+            avg=sum/count;
+        }
+        System.out.println(sum);
+        System.out.println(avg);
+    }
+}
